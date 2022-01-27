@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <!--Tab header-->
+<head>
+    <meta charset="utf-8">
+    <title>My WebPage</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<!--Header-->
+<body>
+    <div>
+        <h1>Welcome to my Webpage</h1>
+    </div>
+    <!-- ~The div are centered
+        ~ the orlist is centered
+        ~ pop-out for img-->
+<style> div {text-align: center;}    
+
+ol{text-align: center;
+list-style-position: inside;}
+.pop-out
+    {
+        transition: transform .5s;
+    }
+
+    .pop-out:hover
+    {
+        -ms-transform: scale(1.5, 1.5);
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+    }
+    
+        </style>
+<!--div for unorder list-->
+    <div class = "menu">
+        <div class="navBar">
+            <nav>
+                <ul class="navB">
+                    <li class="listB"><a class="links" href="#">Home</a></li>
+                    <li class="listB"><a id="sec-a" href="#">About</a></li>
+                    <li class="listB"><a class="links" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<!--pop-out for img-->
+<!--div for order list-->
+    <div>
+        <p>This is <span class="b">my</span> paragraph. <em>Keep reading to learn some things about me.</em></p>
+        <ol type = "1">
+            <li>I like to play frisbee golf</li>
+            <li>My favorite author is Brandon Sanderson</li>
+            <li>I love the chiefs</li>
+        </ol>
+        <a href="C:\Users\Keenan\Documents\CSEE-003 Spring 2022\ICP2\Headshot AADC winter conference.png" target="_blank">
+            <img  border="0" align="center"  src="Headshot AADC winter conference.png"/>
+            
+            <img src="file:///Users/jasminenaraine/Documents/helmet.png" alt="helmet" class="pop-out">
+</a>
+    </div>
+
+</body>
+</html>

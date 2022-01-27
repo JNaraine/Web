@@ -1,0 +1,50 @@
+/* Class Tag */
+
+.links {
+    color:  red;
+}
+
+.b{
+    color: blue;
+}
+
+
+
+/* ID Tag */
+#sec-a{
+    color: purple;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    color:  black;
+}
+
+ul .navB{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: inline-block;
+}
+
+li .listB{
+  float: left;
+}
+
+.listB a {
+  display: block;
+  color: purple;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(197, 98, 98);
+}
