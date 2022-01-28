@@ -68,3 +68,8 @@ div {text-align: center;}
       /*background img*/
 body{
         background-image: url('file:///Users/jasminenaraine/Documents/Warm-sunset-iphone-wallpaper-ilikewallpaper_com.jpeg');}
+
+        .italics{
+          font-style: italic;
+      }
+      
