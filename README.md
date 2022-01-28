@@ -1,4 +1,13 @@
 # Welcome to GitHub Desktop!
+##
+Jasmine Naraine 
+jnytc@umsystem.edu
+Github Link: https://github.com/JNaraine/Web/tree/main/Source/ICP2
+
+##
+Keneen Flynn
+kpfxn@umsystem.edu
+Github Link: https://github.com/kfly2fly/Web-Mobile-Spring-2022
 
 
 
