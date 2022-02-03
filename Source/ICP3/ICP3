@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock,Paper,Scissor</title>
+    <link rel= "stylesheet"  type = "text/css" href= "index.css"> 
+</head>
+
+<body>
+    <div>  
+        <h1>Rock,Paper,Scissors</h1>
+    </div>
+   
+
+    <div class = "selections">
+        <button class = "selections">
+           <img id= "rock" src="file:///Users/jasminenaraine/Documents/GitHub/Web/Source/ICP3/rock.png">  </button>
+    </div>
+    
+    
+    <script>
+ 
+    var computerChoice = prompt("Rock, Paper, Scissors?")
+    var computerChoice = Math.random();
+    console.log(computerChoice) 
+        
+        var rock = 1;
+        var paper = 2;
+        var scissor = 3;
+
+        if (rock == scissor){
+        return "Winner";
+
+        }else if (rock == paper){
+            return "You Lost";
+        } else if (rock == rock){
+            return "Tie Game"
+        }
+    </script>
+    
+</body>
+</html>
