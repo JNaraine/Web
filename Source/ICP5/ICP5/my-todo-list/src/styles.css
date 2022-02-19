@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*Import bootstrap*/
+@import 'bootstrap/dist/css/bootstrap.css';
+
+/*Global Classes*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.bg{
+  background-color: #C0C0C0;
+}
+
+.btn-wrapper {
+  /* flexbox */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.btn {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #cecece;
+  padding: .35rem 1rem .25rem 1rem;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #ecf2fd;
+}
+
+.btn:active {
+  background-color: #d1e0fe;
+}
+
+.btn:focus {
+  outline: none;
+  border: black solid 2px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: skyblue;
+  width: 100%;
+  padding: .75rem;
+  font-size: 1.3rem;
+  border: dimgrey solid 4px;
+  margin: 1rem 0;
+}
+
+.btn-primary:hover {
+  background-color: dimgrey;
+  border: skyblue solid 4px;
+  color: yellow;
+}
+
+.btn-primary:focus {
+  color: yellow;
+  outline: none;
+  border: skyblue solid 4px;
+  background-color: lightblue;
+}
+
+.btn-primary:active {
+  background-color: lightblue;
+}

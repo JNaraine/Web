@@ -1,0 +1,30 @@
+<!-- Create the main div with a background picture -->
+<div class="main bg-cover text-white" style="background: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_468868827_970566970450047_60099.jpg)">
+    <!-- Header -->
+    <h1 class="display-4 font-weight-bold">My To Do List</h1>
+    <!-- Sub header -->
+    <div class="main2">
+        <label for="addItemInput">What would you like to do today?</label>
+    </div>
+    <!-- Add a input bar where the user can define a new to-do item description -->
+    <input
+      #newItem
+      placeholder="Add an item"
+      (keyup.enter)="addItem(newItem.value); newItem.value = ''"
+      class="lg-text-input"
+      id="addItemInput"
+    />
+    <!-- Add a button that appends the input description to the item list with done=false -->
+    <button class="btn-primary" (click)="addItem(newItem.value)">Add</button>
+
+   <!--  Dynamically display # of items left -->
+    <h2>You have {{items.length}} <span *ngIf="items.length === 1; else elseBlock">task</span>
+    <ng-template #elseBlock>tasks</ng-template> to do</h2>
+
+    <!-- ngFor directive loops through list of items and calls the Item component to display each item -->
+    <ul>
+      <li *ngFor="let item of items">
+        <app-item (remove)="remove(item)" [item]="item"></app-item>
+      </li>
+    </ul>
+</div>

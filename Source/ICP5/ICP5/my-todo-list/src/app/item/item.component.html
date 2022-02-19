@@ -1,0 +1,29 @@
+<div class="item">
+<!-- Create a bootstrap grid for each item -->
+  <div class="btn-wrapper flex-row" *ngIf="!editable">
+    <!-- Create a div for each item description and checkbox -->
+    <div class="col-8 desc">
+      <!-- Add a checkbox and item description element for each item -->
+      <input [id]="item.description" type="checkbox" (change)="item.done = !item.done" [checked]="item.done" />
+      <label [for]="item.description" class="text-center">{{item.description}}</label>
+    </div>
+    <!-- Create column for edit and delete button -->
+    <div class="col-4">
+      <!-- Change editable to true -->
+      <button class="btn" (click)="editable = !editable">Edit</button>
+      <!-- Tell app component to remove an item -->
+      <button class="btn btn-warn" (click)="remove.emit()">Delete</button>
+    </div>
+  </div>
+  <!-- This section shows only if user clicks Edit button -->
+  <div *ngIf="editable">
+    <!-- Create input bar with previous description -->
+    <input class="sm-text-input" placeholder="edit item" [value]="item.description" #editedItem (keyup.enter)="saveItem(editedItem.value)">
+    <div class="btn-wrapper">
+      <!-- Cancel the edit operation -->
+      <button class="btn" (click)="editable = !editable">Cancel</button>
+      <!-- Export new item description if saved -->
+      <button class="btn btn-save" (click)="saveItem(editedItem.value)">Save</button>
+    </div>
+  </div>
+</div>
